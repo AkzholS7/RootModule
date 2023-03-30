@@ -22,7 +22,7 @@ module "eks" {
   source         = "../../modules/eks"
   project        = "dev-eks"
   vpc_id         = module.vpc.vpc_id
-  public_subnet = module.vpc.public_subnet_id
+  private_subnet = module.vpc.private_subnet_id
 
 
 }
